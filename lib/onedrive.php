@@ -172,7 +172,9 @@ class onedrive
                 'name' => $item['name'],
                 'size' => $item['size'],
                 'lastModifiedDateTime' => strtotime($item['lastModifiedDateTime']) ,
-                'downloadUrl' => $item['@microsoft.graph.downloadUrl'],
+                /* 替换解析源以加速下载 */
+                'downloadUrl'=>str_ireplace("yxom-my.sharepoint.com","sources.srv.pub",$item['@microsoft.graph.downloadUrl']),
+                //'downloadUrl' => $item['@microsoft.graph.downloadUrl'],
                 'folder' => empty($item['folder']) ? false : true
             );
         }
