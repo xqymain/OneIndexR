@@ -3,13 +3,15 @@ define('VIEW_PATH', ROOT . 'view/admin/');
 class AdminController
 {
     static $default_config = array(
-        'site_name' => 'OneIndex',
-        'password' => '5d607c0cbd801f4fdec24f9f36d2c32a', /*修改为md5*/
+        'site_name' => 'OneIndexR',
+        'password' => '71e74a073b78b21f6d841291161b01c9', /*修改为md5，OneindexR*/
         'style' => 'material',
         'onedrive_root' => '',
         'cache_type' => 'secache',
         'cache_expire_time' => 3600,
         'cache_refresh_time' => 600,
+        'source_website' => '',
+        'cdn_website' => '', 
         'root_path' => '?',
         'show' => array(
             'stream' => ['txt'],
@@ -117,6 +119,8 @@ class AdminController
             config('onedrive_hide', $_POST['onedrive_hide']);
             config('onedrive_hotlink', $_POST['onedrive_hotlink']);
             config('cache_expire_time', intval($_POST['cache_expire_time']));
+            config('source_website', $_POST['source_website']);
+            config('cdn_website', $_POST['cdn_website']);
             $_POST['root_path'] = empty($_POST['root_path']) ? '?' : '';
             config('root_path', $_POST['root_path']);
         }

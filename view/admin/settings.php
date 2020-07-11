@@ -4,7 +4,7 @@
 <div class="mdui-container-fluid">
 
 	<div class="mdui-typo">
-	  <h1> 基本设置 <small>设置OneIndex基本参数</small></h1>
+	  <h1> 基本设置 <small>设置OneIndexR基本参数</small></h1>
 	</div>
 	<form action="" method="post">
 		<div class="mdui-textfield">
@@ -61,6 +61,15 @@
 		<div class="mdui-textfield">
 		  <h4>缓存过期时间(秒)</h4>
 		  <input class="mdui-textfield-input" type="text" name="cache_expire_time" value="<?php echo $config['cache_expire_time'];?>"/>
+		</div>
+
+		<div class="mdui-textfield">
+		  <h4>源站地址(可选，不含http(s)，应为*.sharepoint.*)</h4>
+		  <input class="mdui-textfield-input" type="text" name="source_website" value="<?php echo $config['source_website'];?>"/>
+		</div>
+		<div class="mdui-textfield">
+		  <h4>CDN地址(可选，不含http(s))</h4>
+		  <input class="mdui-textfield-input" type="text" name="cdn_website" value="<?php echo $config['cdn_website'];?>"/>
 		</div>
 
 		<div class="mdui-textfield">

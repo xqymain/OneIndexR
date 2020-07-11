@@ -1,33 +1,41 @@
 
-<h1 align="center"><a href="https://github.com/SomeBottle/OneIndex" target="_blank">OneIndex</a></h1>
+<h1 align="center"><a href="https://github.com/xqymain/OneIndexR" target="_blank">OneIndexR</a></h1>
 
-> Oneindex Bottle Edition.<br>
-> (๑•̀ㅂ•́)و✧  Original Program by [Donwa](https://github.com/donwa/oneindex). 
+> OneindexR Edition.<br>
+> |(*′口`) Original Program by [Donwa](https://github.com/donwa/oneindex). 
+
+>> Oneindex Bottle Edition.<br>
+>> (๑•̀ㅂ•́)و✧  Original Program by [Donwa](https://github.com/donwa/oneindex). 
 
 <p align="center">
-<img alt="star" src="https://img.shields.io/github/stars/SomeBottle/OneIndex.svg"/>
-<img alt="fork" src="https://img.shields.io/github/forks/SomeBottle/OneIndex.svg"/>
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/SomeBottle/OneIndex.svg?label=commits">
-<img alt="issues" src="https://img.shields.io/github/issues/SomeBottle/OneIndex.svg"/>
-<img alt="Author" src="https://img.shields.io/badge/author-Bottle-red.svg"/>
+<img alt="star" src="https://img.shields.io/github/stars/xqymain/OneIndexR.svg"/>
+<img alt="fork" src="https://img.shields.io/github/forks/xqymain/OneIndexR.svg"/>
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xqymain/OneIndexR.svg?label=commits">
+<img alt="issues" src="https://img.shields.io/github/issues/xqymain/OneIndexR.svg"/>
+<img alt="Author" src="https://img.shields.io/badge/author-xqymain-red.svg"/>
 <img alt="Download" src="https://img.shields.io/badge/download-85.2KB-brightgreen.svg"/>
 </p>
 
-## 停止更新
-因为程序可维护性不高，目前不再对这个仓库进行维护。取而代之的是另一个项目：  
-https://github.com/SomeBottle/OdIndex  
+> ## 停止更新
+## 仅维护
+大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，实在懒得换的可以使用本项目的后续版本。 
+维护工作不出意外的话不会加入新功能，仅维持现有功能的完整性（0基础小白落泪
 
 ## 缘由  
-之前听网友介绍了入了one的大门，结果鼓捣oneindex时我的历程很不顺利，一会儿文件列表出不来，一会儿jwt token又过期了...   
-于是我修改了一下，**缓解了**部分问题.稍后可能会加入更多功能.  
+> 之前听网友介绍了入了one的大门，结果鼓捣oneindex时我的历程很不顺利，一会儿文件列表出不来，一会儿jwt token又过期了...   
+> 于是我修改了一下，**缓解了**部分问题.稍后可能会加入更多功能.  
+
+无意间了解到了Mircosoft E5 Developer这个福利活动，出于一些原因要储存大量内容，又对数据安全和储存成本耿耿于怀（穷是原罪
+几经折腾建好了[自动续费服务](https://github.com/xqymain/RenewMircosoftE5)，又由于oneindex删库，选用了[Bottle](https://github.com/SomeBottle/OneIndex)大佬的版本。
+出于对CDN和视频播放的需求，现推出衍生版。
 
 ## 修改内容  
 1. 密码md5密文保存  
 2. 自动判断HTTP 429请求过多的错误，并自动限制刷新的时间间隔，自动调整刷新周期.(如果没有到周期会返回提示)↓
   
-  ![](https://ww2.sinaimg.cn/large/ed039e1fgy1g1dncyfprgj20iw0acwee)  
+  ![Cache Refresh Attention](https://ww2.sinaimg.cn/large/ed039e1fgy1g1dncyfprgj20iw0acwee)  
   
-  ![](https://ww2.sinaimg.cn/large/ed039e1fgy1g1dnd9mrelj20dq02bt8l)  
+  ![Cache Refresh CLI](https://ww2.sinaimg.cn/large/ed039e1fgy1g1dnd9mrelj20dq02bt8l)  
   
   详细配置可以自行去 `/config/refreshfix.php` 进行修改，`refreshinterval` 是刷新允许周期，`maxretrytime` 是自动调整周期前允许重试的次数.  
   

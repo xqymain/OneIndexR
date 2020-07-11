@@ -1,7 +1,8 @@
 <?php view::layout('layout')?>
 
 <?php 
-$item['thumb'] = onedrive::thumbnail($item['path']);
+$item['thumb_origin'] = onedrive::thumbnail($item['path']);
+$item['thumb'] = str_ireplace($item['source_website'],$item['cdn_website'],$item['thumb_origin']);
 ?>
 
 <?php view::begin('content');?>

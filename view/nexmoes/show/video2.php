@@ -5,8 +5,7 @@
 if(strpos($item['downloadUrl'],"sharepoint.com") == false || strpos($item['downloadUrl'],$item['cdn_website']) == false){
 	header('Location: '.$item['downloadUrl']);exit();
 }
-$item['thumb_origin'] = onedrive::thumbnail($item['path']);
-$item['thumb'] = str_ireplace($item['source_website'],$item['cdn_website'],$item['thumb_origin']);
+$item['thumb'] = onedrive::thumbnail($item['path']);
 $mpd =  str_replace("thumbnail","videomanifest",$item['thumb'])."&part=index&format=dash&useScf=True&pretranscode=0&transcodeahead=0";
 ?>
 
@@ -14,17 +13,8 @@ $mpd =  str_replace("thumbnail","videomanifest",$item['thumb'])."&part=index&for
 <script src="https://cdn.jsdelivr.net/npm/xgplayer@2.9.6/browser/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xgplayer-shaka@1.1.5/browser/index.js"></script>
 <div class="mdui-container-fluid">
-	<br>
-	<div id="mse"></div>
-	<br>
-	<!-- 固定标签 -->
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">下载地址</label>
-	  <input class="mdui-textfield-input" type="text" value="<?php e($url);?>"/>
-	</div>
-	<div class="mdui-textfield">
-	  <label class="mdui-textfield-label">引用地址</label>
-	  <textarea class="mdui-textfield-input"><video><source src="<?php e($url);?>" type="video/mp4"></video></textarea>
+	<div class="nexmoe-item">
+		<div class="mdui-center" id="mse"></div>
 	</div>
 </div>
 <script type="text/javascript">

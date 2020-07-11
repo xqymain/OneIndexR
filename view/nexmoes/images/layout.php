@@ -4,10 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no"/>
 	<title><?php e($title.' - '.config('site_name'));?></title>
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.1/dist/css/mdui.min.css">
-	<link rel="stylesheet" href="https://cloud.i.chainwon.com/data/User/admin/home/css/main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
+	<!--<link rel="stylesheet" href="https://cloud.i.chainwon.com/data/User/admin/home/css/main.css">-->
 	<!--https://cloud.i.chainwon.com/data/User/admin/home/css/main.css无效-->
-	<script src="https://cdn.jsdelivr.net/npm/mdui@0.4.1/dist/js/mdui.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
 </head>
 <body class="mdui-theme-primary-blue-grey mdui-theme-accent-blue">
 	<header class="mdui-appbar mdui-color-theme">
