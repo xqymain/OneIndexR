@@ -51,6 +51,7 @@ else {
 		url: \'');e($item['downloadUrl']);e('\',
 		playsinline: true,
 		fitVideoSize: true,
+		cssFullscreen: true,
 		playbackRate: [
 			0.5,
 			0.75,
