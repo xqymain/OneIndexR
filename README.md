@@ -5,11 +5,7 @@
 
 > 本项目二次开发并默认使用[dl233](https://github.com/dl233)大佬的[模板nexmoes](https://github.com/dl233/OneIndex-theme-nexmoes),该部分的二次开发应遵循Apache License 2.0协议
 
-<<<<<<< HEAD
 > 本项目二次开发并默认使用[小歪](https://www.ixiaowai.cn/)大佬的[小歪API](https://api.ixiaowai.cn/)，该部分的嵌入已得到作者许可，并标明[出处](https://blog.ixiaowai.cn/zyym/750.html)
-=======
-> 本项目二次开发并默认使用[小歪](https://www.ixiaowai.cn/)大佬的[小歪API](https://api.ixiaowai.cn/)，该部分的开源协议尚不明确，待回复
->>>>>>> ab376245e808b9ff48a4f9714e66c4782d0c3aa4
 
 >> Oneindex Bottle Edition.<br>
 >> (๑•̀ㅂ•́)و✧  Original Program by [Donwa](https://github.com/donwa/oneindex). 
@@ -25,13 +21,7 @@
 
 > ## 停止更新
 ## 仅维护
-<<<<<<< HEAD
 Donwa大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不想换可以使用本项目的后续版本。
-=======
-Donwa大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，实在不想换可以使用本项目的后续版本。
-
-维护工作不出意外的话不会加入新功能，仅维持现有功能的完整性（水平有限）
->>>>>>> ab376245e808b9ff48a4f9714e66c4782d0c3aa4
 
 维护工作不出意外的话不会加入新功能，仅维持现有功能的完整性（水平有限）
 
@@ -41,13 +31,10 @@ Donwa大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，实�
 几经折腾建好了[自动续费服务](https://github.com/xqymain/RenewMircosoftE5)，又由于oneindex删库，选用了[Bottle](https://github.com/SomeBottle/OneIndex)大佬的版本。
 出于对CDN和视频播放的需求，现推出衍生版。
 
-<<<<<<< HEAD
 > Donwa:
 > 之前听网友介绍了入了one的大门，结果鼓捣oneindex时我的历程很不顺利，一会儿文件列表出不来，一会儿jwt token又过期了...   
 > 于是我修改了一下，**缓解了**部分问题.稍后可能会加入更多功能.  
 
-=======
->>>>>>> ab376245e808b9ff48a4f9714e66c4782d0c3aa4
 ## 修改内容
 1. 对CDN的原生支持，在后台完善源站域名和CDN域名可以开启；
 2. 对视频音频播放器的改进，**nexmoes**和**material**主题将Dplayer替换xgplayer；
@@ -55,10 +42,7 @@ Donwa大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，实�
 4. 对无效地址的移除和http地址的https化；
 5. 对视频格式默认打开方式的修改，图库允许上传格式的修改，增加了flac后缀的图标和播放。
 
-<<<<<<< HEAD
 > Donwa:
-=======
->>>>>>> ab376245e808b9ff48a4f9714e66c4782d0c3aa4
 > 1. 密码md5密文保存  
 > 2. 自动判断HTTP 429请求过多的错误，并自动限制刷新的时间间隔，自动调整刷新周期.(如果没有到周期会返回提示)↓
   
@@ -121,9 +105,5 @@ rewrite ^/(.*)$ /index.php?/$1 last;
  * 重试安装  
  * 其余还有跳转问题（链接无效）： <https://github.com/donwa/oneindex/issues/118>  
 
-<<<<<<< HEAD
 4. 西瓜播放器相关问题：
      需要正确开启CORS功能才能使用全部功能，有相关技术面的大佬可以提pr！
-=======
-4. 西瓜播放器需要正确开启CORS功能才能使用全部功能，有相关技术面的大佬可以提pr！
->>>>>>> ab376245e808b9ff48a4f9714e66c4782d0c3aa4
