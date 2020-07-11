@@ -1,3 +1,9 @@
+<!--
+            Copyright 2020 dl233
+   Licensed under the Apache License, Version 2.0
+             Modified by xqymain
+-->
+
 <?php view::layout('layout')?>
 
 <?php 

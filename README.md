@@ -3,7 +3,7 @@
 > OneindexR Edition.<br>
 > |(*′口`) Original Program by [Donwa](https://github.com/donwa). 
 
-> 本项目二次开发并默认使用[dl233](https://github.com/dl233)大佬的[模板nexmoes](https://github.com/dl233/OneIndex-theme-nexmoes),该部分的二次开发应遵循Apache License 2.0协议
+> 本项目二次开发并默认使用[dl233](https://github.com/dl233)大佬的[模板nexmoes](https://github.com/dl233/OneIndex-theme-nexmoes),该部分的二次开发应遵循[Apache License 2.0协议](http://www.apache.org/licenses/LICENSE-2.0)
 
 > 本项目二次开发并默认使用[小歪](https://www.ixiaowai.cn/)大佬的[小歪API](https://api.ixiaowai.cn/)，该部分的嵌入已得到作者许可，并标明[出处](https://blog.ixiaowai.cn/zyym/750.html)
 
