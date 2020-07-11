@@ -13,7 +13,7 @@
 <p align="center">
 <a href="https://github.com/xqymain/OneIndexR/stargazers"><img alt="star" src="https://img.shields.io/github/stars/xqymain/OneIndexR.svg"/></a>
 <a href="https://github.com/xqymain/OneIndexR/network/members"><img alt="fork" src="https://img.shields.io/github/forks/xqymain/OneIndexR.svg"/></a>
-<a href="https://github.com/xqymain/OneIndexR/commits/master">img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xqymain/OneIndexR.svg?label=commits"></a>
+<a href="https://github.com/xqymain/OneIndexR/commits/master"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xqymain/OneIndexR.svg?label=commits"></a>
 <a href="https://github.com/xqymain/OneIndexR/issues"><img alt="issues" src="https://img.shields.io/github/issues/xqymain/OneIndexR.svg"/></a>
 <a href="https://github.com/xqymain/"><img alt="Author" src="https://img.shields.io/badge/author-xqymain-red.svg"/></a>
 <a href="https://github.com/xqymain/OneIndexR/archive/master.zip"><img alt="Download" src="https://img.shields.io/badge/download-270KB-brightgreen.svg"/></a>
