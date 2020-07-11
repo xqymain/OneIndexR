@@ -11,16 +11,16 @@
 >> (๑•̀ㅂ•́)و✧  Original Program by [Donwa](https://github.com/donwa/oneindex). 
 
 <p align="center">
-<img alt="star" src="https://img.shields.io/github/stars/xqymain/OneIndexR.svg"/>
-<img alt="fork" src="https://img.shields.io/github/forks/xqymain/OneIndexR.svg"/>
-<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xqymain/OneIndexR.svg?label=commits">
-<img alt="issues" src="https://img.shields.io/github/issues/xqymain/OneIndexR.svg"/>
-<img alt="Author" src="https://img.shields.io/badge/author-xqymain-red.svg"/>
-<img alt="Download" src="https://img.shields.io/badge/download-85.2KB-brightgreen.svg"/>
+<a href="https://github.com/xqymain/OneIndexR/stargazers"><img alt="star" src="https://img.shields.io/github/stars/xqymain/OneIndexR.svg"/></a>
+<a href="https://github.com/xqymain/OneIndexR/network/members"><img alt="fork" src="https://img.shields.io/github/forks/xqymain/OneIndexR.svg"/></a>
+<a href="https://github.com/xqymain/OneIndexR/commits/master">img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xqymain/OneIndexR.svg?label=commits"></a>
+<a href="https://github.com/xqymain/OneIndexR/issues"><img alt="issues" src="https://img.shields.io/github/issues/xqymain/OneIndexR.svg"/></a>
+<a href="https://github.com/xqymain/"><img alt="Author" src="https://img.shields.io/badge/author-xqymain-red.svg"/></a>
+<a href="https://github.com/xqymain/OneIndexR/archive/master.zip"><img alt="Download" src="https://img.shields.io/badge/download-270KB-brightgreen.svg"/></a>
 </p>
 
 > ## 停止更新
-## 仅维护
+## 仅维护 DEMO:<https://jp.srv.pub/>
 Donwa大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不想换可以使用本项目的后续版本。
 
 维护工作不出意外的话不会加入新功能，仅维持现有功能的完整性（水平有限）
