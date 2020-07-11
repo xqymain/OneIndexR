@@ -1,8 +1,11 @@
-
 <h1 align="center"><a href="https://github.com/xqymain/OneIndexR" target="_blank">OneIndexR</a></h1>
 
 > OneindexR Edition.<br>
-> |(*′口`) Original Program by [Donwa](https://github.com/donwa/oneindex). 
+> |(*′口`) Original Program by [Donwa](https://github.com/donwa). 
+
+> 本项目二次开发并默认使用[dl233](https://github.com/dl233)大佬的[模板nexmoes](https://github.com/dl233/OneIndex-theme-nexmoes),该部分的二次开发应遵循Apache License 2.0协议
+
+> 本项目二次开发并默认使用[小歪](https://www.ixiaowai.cn/)大佬的[小歪API](https://api.ixiaowai.cn/)，该部分的嵌入已得到作者许可，并标明[出处](https://blog.ixiaowai.cn/zyym/750.html)
 
 >> Oneindex Bottle Edition.<br>
 >> (๑•̀ㅂ•́)و✧  Original Program by [Donwa](https://github.com/donwa/oneindex). 
@@ -18,35 +21,45 @@
 
 > ## 停止更新
 ## 仅维护
-大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，实在懒得换的可以使用本项目的后续版本。 
-维护工作不出意外的话不会加入新功能，仅维持现有功能的完整性（0基础小白落泪
+Donwa大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不想换可以使用本项目的后续版本。
+
+维护工作不出意外的话不会加入新功能，仅维持现有功能的完整性（水平有限）
 
 ## 缘由  
-> 之前听网友介绍了入了one的大门，结果鼓捣oneindex时我的历程很不顺利，一会儿文件列表出不来，一会儿jwt token又过期了...   
-> 于是我修改了一下，**缓解了**部分问题.稍后可能会加入更多功能.  
-
 无意间了解到了Mircosoft E5 Developer这个福利活动，出于一些原因要储存大量内容，又对数据安全和储存成本耿耿于怀（穷是原罪
+
 几经折腾建好了[自动续费服务](https://github.com/xqymain/RenewMircosoftE5)，又由于oneindex删库，选用了[Bottle](https://github.com/SomeBottle/OneIndex)大佬的版本。
 出于对CDN和视频播放的需求，现推出衍生版。
 
-## 修改内容  
-1. 密码md5密文保存  
-2. 自动判断HTTP 429请求过多的错误，并自动限制刷新的时间间隔，自动调整刷新周期.(如果没有到周期会返回提示)↓
+> Donwa:
+> 之前听网友介绍了入了one的大门，结果鼓捣oneindex时我的历程很不顺利，一会儿文件列表出不来，一会儿jwt token又过期了...   
+> 于是我修改了一下，**缓解了**部分问题.稍后可能会加入更多功能.  
+
+## 修改内容
+1. 对CDN的原生支持，在后台完善源站域名和CDN域名可以开启；
+2. 对视频音频播放器的改进，**nexmoes**和**material**主题将Dplayer替换xgplayer；
+3. 对js地址的修改，可能会对某些页面的加载速度有影响；
+4. 对无效地址的移除和http地址的https化；
+5. 对视频格式默认打开方式的修改，图库允许上传格式的修改，增加了flac后缀的图标和播放。
+
+> Donwa:
+> 1. 密码md5密文保存  
+> 2. 自动判断HTTP 429请求过多的错误，并自动限制刷新的时间间隔，自动调整刷新周期.(如果没有到周期会返回提示)↓
   
   ![Cache Refresh Attention](https://ww2.sinaimg.cn/large/ed039e1fgy1g1dncyfprgj20iw0acwee)  
   
   ![Cache Refresh CLI](https://ww2.sinaimg.cn/large/ed039e1fgy1g1dnd9mrelj20dq02bt8l)  
   
-  详细配置可以自行去 `/config/refreshfix.php` 进行修改，`refreshinterval` 是刷新允许周期，`maxretrytime` 是自动调整周期前允许重试的次数.  
+>  详细配置可以自行去 `/config/refreshfix.php` 进行修改，`refreshinterval` 是刷新允许周期，`maxretrytime` 是自动调整周期前允许重试的次数.  
   
-3. 防止request失败导致的空文件目录.(（づ￣3￣）づ拒绝首页空白)   
-4. 增加**简单的**状态码&出错日志(在 `/lib` 目录下生成).( `requestcode.txt` & `requestlog.php`)  
-5. 在**nexmoe主题**增加了一次性缩略图的加载限制，最多预览五十张（防止请求过多被限制）  
-6. 增加缓存刷新结果，如果刷新失败，后台会显示**重建缓存失败**，CLI模式在 `one.php` 执行刷新时如果失败会返回**Failed**  
+> 3. 防止request失败导致的空文件目录.(（づ￣3￣）づ拒绝首页空白)   
+> 4. 增加**简单的**状态码&出错日志(在 `/lib` 目录下生成).( `requestcode.txt` & `requestlog.php`)  
+> 5. 在**nexmoe主题**增加了一次性缩略图的加载限制，最多预览五十张（防止请求过多被限制）  
+> 6. 增加缓存刷新结果，如果刷新失败，后台会显示**重建缓存失败**，CLI模式在 `one.php` 执行刷新时如果失败会返回**Failed**  
   ![Example](https://ww2.sinaimg.cn/large/ed039e1fgy1g15sddvme4j20bg0650sh)  
-7. 文件缓存过期**引用时**自动刷新   
+> 7. 文件缓存过期**引用时**自动刷新   
 
-## 店长推荐（误  
+## 店长Donwa推荐（误  
 `crontab` 选项推荐[可选]，非必需:
 1. token自动刷新: 两小时
 
@@ -60,6 +73,7 @@
 */30 * * * * php /www/one.php cache:refresh
 ```
 `设置`选项推荐:
+> Tips：`base.php`文件安装之后会出现在`config`目录
 - `base.php` 中 `cache_refresh_time` 推荐为 `3600`(秒)
 - 缓存类型推荐为 `filecache`
 - 缓存过期时间推荐为 `86400` (秒)
@@ -78,15 +92,18 @@ rewrite ^/(.*)$ /index.php?/$1 last;
 }  
 ```
 
-## QA
+## Q&A
 1. 周期限制不起效？！
      请注意您的 `/config` 目录下的文件是否可读，php有时候会出现 `permission denied` 问题  
 
-2. 账号绑定出错：  
+2. 账号绑定出错（链接无效）：  
  <https://github.com/donwa/oneindex/issues/511>   
 
 3. 程序安装失败错误：
  * 访问<https://apps.dev.microsoft.com/#/appList>  
  * 删除原有的oneindex应用  
  * 重试安装  
- * 其余还有跳转问题： <https://github.com/donwa/oneindex/issues/118>  
+ * 其余还有跳转问题（链接无效）： <https://github.com/donwa/oneindex/issues/118>  
+
+4. 西瓜播放器相关问题：
+     需要正确开启CORS功能才能使用全部功能，有相关技术面的大佬可以提pr！

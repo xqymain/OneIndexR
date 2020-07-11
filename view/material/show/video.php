@@ -27,6 +27,7 @@ $item['thumb'] = str_ireplace($item['source_website'],$item['cdn_website'],$item
 		url: \'');e($item['downloadUrl']);e('\',
 		playsinline: true,
 		fitVideoSize: true,
+		cssFullscreen: true,
 		minCachedTime: 10,
 		playbackRate: [
 			0.5,

@@ -34,6 +34,7 @@ let player = new window.ShakaJsPlayer({
 	ignores: ['error'],
 	playsinline: true,
 	fitVideoSize: true,
+	cssFullscreen: true,
 	playbackRate: [
 		0.5,
 		0.75,

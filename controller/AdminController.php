@@ -5,7 +5,7 @@ class AdminController
     static $default_config = array(
         'site_name' => 'OneIndexR',
         'password' => '71e74a073b78b21f6d841291161b01c9', /*修改为md5，OneindexR*/
-        'style' => 'material',
+        'style' => 'nexmoes',
         'onedrive_root' => '',
         'cache_type' => 'secache',
         'cache_expire_time' => 3600,
@@ -20,10 +20,8 @@ class AdminController
             'jpeg',
             'png',
             'gif'],
-            'video5' => ['mp4',
-            'webm',
-            'mkv'],
-            'video' => [],
+            'video5' => ['webm','mkv'],
+            'video' => ['mp4','flv'],
             'video2' => ['avi',
             'mpg',
             'mpeg',
@@ -32,11 +30,11 @@ class AdminController
             'mov',
             'wmv',
             'asf',
-            'ts',
-            'flv'],
+            'ts'],
             'audio' => ['ogg',
             'mp3',
-            'wav'],
+            'wav',
+            'flac'],
             'code' => ['html',
             'htm',
             'php',
@@ -72,7 +70,8 @@ class AdminController
         'exts' => ['jpg',
         'png',
         'gif',
-        'bmp']]
+        'bmp',
+        'jpeg']]
     );
 
     function __construct()
