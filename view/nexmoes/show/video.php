@@ -23,7 +23,7 @@ $item['thumb'] = onedrive::thumbnail($item['path']);?>
 		url: \'');e($item['downloadUrl']);e('\',
 		playsinline: true,
 		fitVideoSize: true,
-		cssFullscreen: true
+		cssFullscreen: true,
 		minCachedTime: 10,
 		playbackRate: [
 			0.5,
