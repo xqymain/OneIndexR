@@ -21,7 +21,7 @@
 
 > ## 停止更新
 ## 仅维护 DEMO:<https://jp.srv.pub/>
-Donwa大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不想换可以使用本项目的后续版本。
+Bottle大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不想换可以使用本项目的后续版本。
 
 维护工作不出意外的话不会加入新功能，仅维持现有功能的完整性（水平有限）
 
@@ -31,7 +31,8 @@ Donwa大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不�
 几经折腾建好了[自动续费服务](https://github.com/xqymain/RenewMircosoftE5)，又由于oneindex删库，选用了[Bottle](https://github.com/SomeBottle/OneIndex)大佬的版本。
 出于对CDN和视频播放的需求，现推出衍生版。
 
-> Donwa:
+> Bottle:
+
 > 之前听网友介绍了入了one的大门，结果鼓捣oneindex时我的历程很不顺利，一会儿文件列表出不来，一会儿jwt token又过期了...   
 > 于是我修改了一下，**缓解了**部分问题.稍后可能会加入更多功能.  
 
@@ -42,7 +43,7 @@ Donwa大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不�
 4. 对无效地址的移除和http地址的https化；
 5. 对视频格式默认打开方式的修改，图库允许上传格式的修改，增加了flac后缀的图标和播放。
 
-> Donwa:
+> Bottle:
 > 1. 密码md5密文保存  
 > 2. 自动判断HTTP 429请求过多的错误，并自动限制刷新的时间间隔，自动调整刷新周期.(如果没有到周期会返回提示)↓
   
@@ -59,7 +60,7 @@ Donwa大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不�
   ![Example](https://ww2.sinaimg.cn/large/ed039e1fgy1g15sddvme4j20bg0650sh)  
 > 7. 文件缓存过期**引用时**自动刷新   
 
-## 店长Donwa推荐（误  
+## 店长Bottle推荐（误  
 `crontab` 选项推荐[可选]，非必需:
 1. token自动刷新: 两小时
 
