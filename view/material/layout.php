@@ -69,7 +69,7 @@
 			<a href="/" class="mdui-typo-headline"><?php e(config('site_name'));?></a>
 			<?php foreach((array)$navs as $n=>$l):?>
 			<i class="mdui-icon material-icons mdui-icon-dark" style="margin:0;">chevron_right</i>
-			<a href="<?php rawurlencode('$1');?>"><?php e($n);?></a>
+			<a href="<?php e(str_replace('%2F','/',str_replace('%2F%3F%2F','/?/',rawurlencode($l))));?>"><?php e($n);?></a>
 			<?php endforeach;?>
 			<!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>-->
 		</div>
