@@ -20,7 +20,9 @@
 </p>
 
 > ## 停止更新
-## 仅维护 DEMO:<https://jp.srv.pub/>
+## 仅维护
+DEMO: <https://data.srv.pub/>
+
 Bottle大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不想换可以使用本项目的后续版本。
 
 维护工作不出意外的话不会加入新功能，仅维持现有功能的完整性（水平有限）
@@ -38,10 +40,12 @@ Bottle大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不
 
 ## 修改内容
 1. 对CDN的原生支持，在后台完善源站域名和CDN域名可以开启；
-2. 对视频音频播放器的改进，**nexmoes**和**material**主题将Dplayer替换xgplayer；
-3. 对js地址的修改，可能会对某些页面的加载速度有影响；
+2. 对视频音频播放器的改进，**nexmoes**和**material**主题将Dplayer替换xgplayer和video.js；
+3. 对js地址的修改，可能会加快某些页面的加载速度；
 4. 对无效地址的移除和http地址的https化；
-5. 对视频格式默认打开方式的修改，图库允许上传格式的修改，增加了flac后缀的图标和播放。
+5. 对视频格式默认打开方式的修改，图库允许上传格式的修改，增加了flac后缀的图标和播放功能；
+6. 对mp4格式播放的字幕支持 （实验性）
+7. 对m2ts和ts格式的自动转换（实验性）
 
 > Bottle:
 > 1. 密码md5密文保存  
@@ -107,11 +111,10 @@ rewrite ^/(.*)$ /index.php?/$1 last;
  * 其余还有跳转问题（链接无效）： <https://github.com/donwa/oneindex/issues/118>  
 
 4. 西瓜播放器相关问题：
+     无法播放mkv
 
-     需要正确开启CORS功能才能使用全部功能，有相关技术面的大佬可以提pr！
-      
      对CORS的尝试宣告失败，之前以为是CDN配置问题，后来去掉CDN还是不行，虽然官方api提到支持CORS，但是请求会报错...
      
      可能会抽时间另辟蹊径，也可能不会对这方面进一步支持了。
      
-     已知问题:flv长视频无法缓存及拖动后续片段
+     已知问题:flv长视频（大于100MB？）无法缓存及拖动后续片段
