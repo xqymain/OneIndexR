@@ -26,14 +26,14 @@ if(pathinfo($item["name"], PATHINFO_EXTENSION) === 'flv'){
 		url: \'');e($item['downloadUrl']);e('\',
 		textTrack: [
 			{
-			  src: "//');e($_SERVER['HTTP_HOST']);
-			  e('\/?/');e(str_replace(pathinfo($item["name"], PATHINFO_EXTENSION),"vvt",$item["name"]));
+			  src: "');e(str_replace(pathinfo($item["name"], PATHINFO_EXTENSION),"vtt",$url));
 			  e('",
 			  kind: "subtitles",
 			  label: "default",
 			  srclang: "zh",
 			  default: true
-			},
+			}
+		],
 		playsinline: true,
 		fitVideoSize: true,
 		cssFullscreen: true,
@@ -63,14 +63,14 @@ else if(pathinfo($item["name"], PATHINFO_EXTENSION) === 'mp4'){
 		url: \'');e($item['downloadUrl']);e('\',
 		textTrack: [
 			{
-			  src: "//');e($_SERVER['HTTP_HOST']);
-			  e('\/?/');e(str_replace(pathinfo($item["name"], PATHINFO_EXTENSION),"vvt",$item["name"]));
+			  src: "');e(str_replace(pathinfo($item["name"], PATHINFO_EXTENSION),"vtt",$url));
 			  e('",
 			  kind: "subtitles",
 			  label: "default",
 			  srclang: "zh",
 			  default: true
-			},
+			}
+		],
 		playsinline: true,
 		fitVideoSize: true,
 		cssFullscreen: true,
