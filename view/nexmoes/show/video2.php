@@ -8,7 +8,7 @@
 
 <?php 
 //仅支持教育版和企业版
-if(strpos($item['downloadUrl'],"sharepoint.com") == false || strpos($item['downloadUrl'],$item['cdn_website']) == false){
+if((strpos($item['downloadUrl'],"sharepoint.com") == false || strpos($item['downloadUrl'],$item['cdn_website'])) == false){
 	header('Location: '.$item['downloadUrl']);exit();
 }
 $item['thumb'] = onedrive::thumbnail($item['path']);
