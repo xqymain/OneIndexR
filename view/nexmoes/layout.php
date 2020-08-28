@@ -51,6 +51,6 @@
 		fixed="true">
 	</meting-js>
 	<!-- id改成自己的歌单号 -->
-	<script src="./view/nexmoes/theme/personjs.js"></script>
+	<script src="//<?php print($_SERVER['HTTP_HOST']) ?>/view/nexmoes/theme/personjs.js"></script>
 </body>
 </html>
