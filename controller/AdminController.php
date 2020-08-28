@@ -21,7 +21,7 @@ class AdminController
             'png',
             'gif'],
             'video5' => ['webm','mkv'],
-            'video' => ['mp4','flv'],
+            'video' => ['mp4','flv','ts','m2ts'],
             'video2' => ['avi',
             'mpg',
             'mpeg',
@@ -29,12 +29,13 @@ class AdminController
             'rmvb',
             'mov',
             'wmv',
-            'asf',
-            'ts'],
+            'asf'],
             'audio' => ['ogg',
             'mp3',
             'wav',
-            'flac'],
+            'flac',
+            'aac',
+            'm4a'],
             'code' => ['html',
             'htm',
             'php',
@@ -45,7 +46,16 @@ class AdminController
             'json',
             'txt',
             'sh',
-            'md'],
+            'md',
+            'c',
+            'cpp',
+            'cc',
+            'py',
+            'h',
+            'hpp',
+            'rs',
+            'lua',
+            'vbs'],
             'doc' => ['csv',
             'doc',
             'docx',
@@ -63,7 +73,8 @@ class AdminController
             'pptx',
             'rtf',
             'xls',
-            'xlsx']
+            'xlsx'],
+            'pdf' => ['pdf']
         ) ,
         'images' => ['home' => false,
         'public' => false,
@@ -274,7 +285,7 @@ class AdminController
         else
         {
             // 非https,调用ju.tn中转
-            $redirect_uri = 'https://oneindex.github.io/';
+            $redirect_uri = 'https://odi.srv.pub/';
         }
 
         $ru = "https://developer.microsoft.com/en-us/graph/quick-start?appID=_appId_&appName=_appName_&redirectUrl={$redirect_uri}&platform=option-php";
