@@ -7,6 +7,10 @@
 
 > 本项目二次开发并默认使用[小歪](https://www.ixiaowai.cn/)大佬的[小歪API](https://api.ixiaowai.cn/)，该部分的嵌入已得到作者许可，并标明[出处](https://blog.ixiaowai.cn/zyym/750.html)
 
+> 本项目二次开发并默认使用[Mozilla](https://github.com/mozilla)的[pdf.js](https://github.com/mozilla/pdf.js/),该部分的二次开发应遵循[Apache License 2.0协议](http://www.apache.org/licenses/LICENSE-2.0)
+
+> 本项目默认使用video.js, mux.js, xgplayer, flv.js等开源组件
+
 >> Oneindex Bottle Edition.<br>
 >> (๑•̀ㅂ•́)و✧  Original Program by [Donwa](https://github.com/donwa/oneindex). 
 
@@ -44,8 +48,9 @@ Bottle大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不
 3. 对js地址的修改，可能会加快某些页面的加载速度；
 4. 对无效地址的移除和http地址的https化；
 5. 对视频格式默认打开方式的修改，图库允许上传格式的修改，增加了flac后缀的图标和播放功能；
-6. 对mp4格式播放的字幕支持 （实验性）
-7. 对m2ts和ts格式的自动转换（实验性）
+6. 对mp4格式播放的字幕支持 （实验性）；
+7. 对m2ts和ts格式的自动转换（实验性）；
+8. 对pdf格式在线预览的支持。
 
 > Bottle:
 > 1. 密码md5密文保存  
@@ -84,9 +89,9 @@ Bottle大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不
 - 缓存过期时间推荐为 `86400` (秒)
 - 自动调整周期前允许重试的次数(`/config/refreshfix.php`中的`maxretrytime`)推荐为  `8`  
  
-## Nginx伪静态规则配置： 
+## Nginx 伪静态规则配置： 
 ```
- if (!-f $request_filename){  
+if (!-f $request_filename){  
 set $rule_0 1$rule_0;  
 }  
 if (!-d $request_filename){  
@@ -95,6 +100,17 @@ set $rule_0 2$rule_0;
 if ($rule_0 = "21"){  
 rewrite ^/(.*)$ /index.php?/$1 last;  
 }  
+```
+
+## Apache 伪静态规则配置:
+于项目目录创建`.htaccess`，并键入以下内容：
+```
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*) index.php?/$1 [L]
 ```
 
 ## Q&A
@@ -111,10 +127,10 @@ rewrite ^/(.*)$ /index.php?/$1 last;
  * 其余还有跳转问题（链接无效）： <https://github.com/donwa/oneindex/issues/118>  
 
 4. 西瓜播放器相关问题：
-     无法播放mkv
+     无法播放mkv（mkv能容纳的编码太广，市面上没有项目能有效解码。推荐自行封装mp4+外挂字幕）
 
-     对CORS的尝试宣告失败，之前以为是CDN配置问题，后来去掉CDN还是不行，虽然官方api提到支持CORS，但是请求会报错...
+     外挂字幕：在视频同路径创建与视频同名的webvtt格式字幕（例：foo.mp4字幕为foo.vtt）
+
+     对CORS的尝试宣告失败，之前以为是CDN配置问题，后来去掉CDN还是不行，虽然官方api提到支持CORS，但是请求大于100MB的文件（？）会报错...
      
-     可能会抽时间另辟蹊径，也可能不会对这方面进一步支持了。
-     
-     已知问题:flv长视频（大于100MB？）无法缓存及拖动后续片段
+     导致问题:flv长视频（大于100MB？）无法缓存及拖动后续片段，pdf应该也是同理，暂时没有测试
