@@ -1,3 +1,9 @@
+<!--
+            Copyright 2020 dl233
+   Licensed under the Apache License, Version 2.0
+             Modified by xqymain
+-->
+
 <?php 
 
 $types = [
@@ -47,6 +53,7 @@ $types = [
 	'shar'=>"application/x-shar",
 	'me'=>"application/x-troll-me",
 	'ts'=>"application/x-troll-ts",
+	'm2ts'=>"application/x-troll-ts",
 	'gif'=>"image/gif",
 	'jpeg'=>"image/pjpeg",
 	'jpg'=>"image/pjpeg",
