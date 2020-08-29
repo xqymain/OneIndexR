@@ -47,6 +47,7 @@ $types = [
 	'shar'=>"application/x-shar",
 	'me'=>"application/x-troll-me",
 	'ts'=>"application/x-troll-ts",
+	'm2ts'=>"application/x-troll-ts",
 	'gif'=>"image/gif",
 	'jpeg'=>"image/pjpeg",
 	'jpg'=>"image/pjpeg",
