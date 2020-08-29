@@ -9,7 +9,7 @@
 
 > 本项目二次开发并默认使用[Mozilla](https://github.com/mozilla)的[pdf.js](https://github.com/mozilla/pdf.js/),该部分的二次开发应遵循[Apache License 2.0协议](http://www.apache.org/licenses/LICENSE-2.0)
 
-> 本项目默认使用video.js, mux.js, xgplayer, flv.js等开源组件
+> 本项目默认使用ace, APlayer, video.js, mux.js, xgplayer等开源组件
 
 >> Oneindex Bottle Edition.<br>
 >> (๑•̀ㅂ•́)و✧  Original Program by [Donwa](https://github.com/donwa/oneindex). 
@@ -20,7 +20,7 @@
 <a href="https://github.com/xqymain/OneIndexR/commits/master"><img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/xqymain/OneIndexR.svg?label=commits"></a>
 <a href="https://github.com/xqymain/OneIndexR/issues"><img alt="issues" src="https://img.shields.io/github/issues/xqymain/OneIndexR.svg"/></a>
 <a href="https://github.com/xqymain/"><img alt="Author" src="https://img.shields.io/badge/author-xqymain-red.svg"/></a>
-<a href="https://github.com/xqymain/OneIndexR/archive/master.zip"><img alt="Download" src="https://img.shields.io/badge/download-270KB-brightgreen.svg"/></a>
+<a href="https://github.com/xqymain/OneIndexR/archive/master.zip"><img alt="Download" src="https://img.shields.io/badge/download-488KB-brightgreen.svg"/></a>
 </p>
 
 > ## 停止更新
@@ -45,12 +45,13 @@ Bottle大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不
 ## 修改内容
 1. 对CDN的原生支持，在后台完善源站域名和CDN域名可以开启；
 2. 对视频音频播放器的改进，**nexmoes**和**material**主题将Dplayer替换xgplayer和video.js；
-3. 对js地址的修改，可能会加快某些页面的加载速度；
+3. 对js地址的修改和开源组件的更新，可能会加快某些页面的加载速度；
 4. 对无效地址的移除和http地址的https化；
 5. 对视频格式默认打开方式的修改，图库允许上传格式的修改，增加了flac后缀的图标和播放功能；
-6. 对mp4格式播放的字幕支持 （实验性）；
+6. 对mp4格式播放的字幕支持；
 7. 对m2ts和ts格式的自动转换（实验性）；
-8. 对pdf格式在线预览的支持。
+8. 对pdf格式在线预览的支持；
+9. 对flv格式在线播放的修复。
 
 > Bottle:
 > 1. 密码md5密文保存  
@@ -130,7 +131,3 @@ RewriteRule ^(.*) index.php?/$1 [L]
      无法播放mkv（mkv能容纳的编码太广，市面上没有项目能有效解码。推荐自行封装mp4+外挂字幕）
 
      外挂字幕：在视频同路径创建与视频同名的webvtt格式字幕（例：foo.mp4字幕为foo.vtt）
-
-     对CORS的尝试宣告失败，之前以为是CDN配置问题，后来去掉CDN还是不行，虽然官方api提到支持CORS，但是请求大于100MB的文件（？）会报错...
-     
-     导致问题:flv长视频（大于100MB？）无法缓存及拖动后续片段，pdf应该也是同理，暂时没有测试
