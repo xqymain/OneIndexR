@@ -11,7 +11,7 @@ $mpd =  str_replace("thumbnail","videomanifest",$item['thumb'])."&part=index&for
 ?>
 
 <?php view::begin('content');?>
-<script src="https://cdn.jsdelivr.net/npm/xgplayer@2.10.1/browser/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/xgplayer@2.11.3/browser/index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/xgplayer-shaka@1.1.5/browser/index.js"></script>
 <div class="mdui-container-fluid">
 	<br>
@@ -39,6 +39,7 @@ let player = new window.ShakaJsPlayer({
 		0.5,
 		0.75,
 		1,
+		1.25,
 		1.5,
 		1.75,
 		2

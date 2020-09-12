@@ -20,7 +20,7 @@ $item['thumb'] = str_ireplace($item['source_website'],$item['cdn_website'],$item
 </div>
 <?php 
 if(pathinfo($item["name"], PATHINFO_EXTENSION) === 'flv'){ 
-	e('<script src="https://cdn.jsdelivr.net/npm/xgplayer@2.10.1/browser/index.js" type="text/javascript"></script>
+	e('<script src="https://cdn.jsdelivr.net/npm/xgplayer@2.11.3/browser/index.js" type="text/javascript"></script>
 	<script src="https://cdn.jsdelivr.net/npm/xgplayer-flv@2.3.29/dist/index.min.js" charset="utf-8"></script>
 	<script>
 	let player = new FlvPlayer({
@@ -58,7 +58,7 @@ if(pathinfo($item["name"], PATHINFO_EXTENSION) === 'flv'){
 }
 
 else if(pathinfo($item["name"], PATHINFO_EXTENSION) === 'mp4'){
-	e('<script src="https://cdn.jsdelivr.net/npm/xgplayer@2.10.1/browser/index.js" type="text/javascript"></script>
+	e('<script src="https://cdn.jsdelivr.net/npm/xgplayer@2.11.3/browser/index.js" type="text/javascript"></script>
 	<script src="https://cdn.jsdelivr.net/npm/xgplayer-mp4@1.1.8/browser/index.js" charset="utf-8"></script>
 	<script>
 	let player = new Player({
