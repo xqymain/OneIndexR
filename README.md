@@ -21,6 +21,7 @@
 <a href="https://github.com/xqymain/OneIndexR/issues"><img alt="issues" src="https://img.shields.io/github/issues/xqymain/OneIndexR.svg"/></a>
 <a href="https://github.com/xqymain/"><img alt="Author" src="https://img.shields.io/badge/author-xqymain-red.svg"/></a>
 <a href="https://github.com/xqymain/OneIndexR/archive/master.zip"><img alt="Download" src="https://img.shields.io/badge/download-488KB-brightgreen.svg"/></a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fxqymain%2FOneIndexR?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fxqymain%2FOneIndexR.svg?type=shield"/></a>
 </p>
 
 > ## 停止更新
@@ -131,3 +132,7 @@ RewriteRule ^(.*) index.php?/$1 [L]
      无法播放mkv（mkv能容纳的编码太广，市面上没有项目能有效解码。推荐自行封装mp4+外挂字幕）
 
      外挂字幕：在视频同路径创建与视频同名的webvtt格式字幕（例：foo.mp4字幕为foo.vtt）
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fxqymain%2FOneIndexR.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fxqymain%2FOneIndexR?ref=badge_large)
