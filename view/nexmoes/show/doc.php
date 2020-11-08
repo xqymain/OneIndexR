@@ -1,5 +1,5 @@
 <?php 
-	$url = 'https://view.officeapps.live.com/op/view.aspx?src='.urlencode($item['downloadUrl']);
+	$url = 'https://proxy.srv.pub:8443/-----https://docs.google.com/viewer?url='.urlencode($item['downloadUrl']);
 	view::direct($url);
 	exit();
 ?>
