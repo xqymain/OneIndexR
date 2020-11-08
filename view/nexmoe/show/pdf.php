@@ -1,7 +1,7 @@
 <?php view::layout('layout')?>
 
 <?php view::begin('content');?>
-	<iframe id="mask" src='<?php echo str_replace('transform/thumbnail?', 'transform/pdf?',$item['thumb']);?>' 
+<iframe id="mask" src='//<?php print($_SERVER['HTTP_HOST']) ?>/api/pdfjs.html?file=<?php e($url)?>' 
 		allowfullscreen="allowfullscreen"
         mozallowfullscreen="mozallowfullscreen"
         msallowfullscreen="msallowfullscreen"
