@@ -16,8 +16,8 @@ $item['thumb'] = onedrive::thumbnail($item['path']);?>
 
 <?php 
 if(pathinfo($item["name"], PATHINFO_EXTENSION) === 'flv'){ 
-	e('<script src="https://cdn.jsdelivr.net/npm/xgplayer@2.11.3/browser/index.js" type="text/javascript"></script>
-	<script src="https://cdn.jsdelivr.net/npm/xgplayer-flv@2.3.29/dist/index.min.js" charset="utf-8"></script>
+	e('<script src="https://cdn.jsdelivr.net/npm/xgplayer@2.13.0/browser/index.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/xgplayer-flv@2.3.42/dist/index.min.js" charset="utf-8"></script>
 	<script>
 	let player = new FlvPlayer({
 		id: "mse",
@@ -54,8 +54,8 @@ if(pathinfo($item["name"], PATHINFO_EXTENSION) === 'flv'){
 }
 
 else if(pathinfo($item["name"], PATHINFO_EXTENSION) === 'mp4'){
-	e('<script src="https://cdn.jsdelivr.net/npm/xgplayer@2.11.3/browser/index.js" type="text/javascript"></script>
-	<script src="https://cdn.jsdelivr.net/npm/xgplayer-mp4@1.1.8/browser/index.js" charset="utf-8"></script>
+	e('<script src="https://cdn.jsdelivr.net/npm/xgplayer@2.13.0/browser/index.js" type="text/javascript"></script>
+	<script src="https://cdn.jsdelivr.net/npm/xgplayer-mp4@1.2.0/browser/index.js" charset="utf-8"></script>
 	<script>
 	let player = new Player({
 		id: "mse",
@@ -91,7 +91,7 @@ else if(pathinfo($item["name"], PATHINFO_EXTENSION) === 'mp4'){
 }
 
 else if(pathinfo($item["name"], PATHINFO_EXTENSION) === 'webm'){
-	e('<link href="https://cdn.jsdelivr.net/npm/video.js@7.8.4/dist/video-js.min.css" rel="stylesheet" />
+	e('<link href="https://cdn.jsdelivr.net/npm/video.js@7.10.1/dist/video-js.min.css" rel="stylesheet" />
 	<video
 		id="my-video",
 		class="video-js"
@@ -103,14 +103,14 @@ else if(pathinfo($item["name"], PATHINFO_EXTENSION) === 'webm'){
       To view this video please enable JavaScript, and consider upgrading to a web browser that<a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
     </p>
   </video>
-  <script src="https://cdn.jsdelivr.net/npm/video.js@7.8.4/dist/video.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/video.js@7.10.1/dist/video.min.js"></script>
 		');
 }
 
 // This is an experimental feature, recommended only for videos with small capacity
 else if(pathinfo($item["name"], PATHINFO_EXTENSION) === 'ts' || pathinfo($item["name"], PATHINFO_EXTENSION) === 'm2ts'){
 	e('<video controls width="80%"></video>
-    <script src="https://cdn.jsdelivr.net/npm/mux.js@5.6.6/dist/mux.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mux.js@5.6.7/dist/mux.min.js"></script>
     <script>
       // Create array of TS files to play
       segments = [
