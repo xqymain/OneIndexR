@@ -16,8 +16,9 @@ $item['thumb'] = onedrive::thumbnail($item['path']);?>
 
 <?php 
 if(pathinfo($item["name"], PATHINFO_EXTENSION) === 'flv'){ 
+/* It seems to have version restrictions, please upgrade carefully*/
 	e('<script src="https://cdn.jsdelivr.net/npm/xgplayer@2.13.0/browser/index.js" type="text/javascript"></script>
-	<script src="https://cdn.jsdelivr.net/npm/xgplayer-flv@2.3.42/dist/index.min.js" charset="utf-8"></script>
+	<script src="https://cdn.jsdelivr.net/npm/xgplayer-flv@2.3.29/dist/index.min.js" charset="utf-8"></script>
 	<script>
 	let player = new FlvPlayer({
 		id: "mse",
