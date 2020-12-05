@@ -50,8 +50,8 @@ Bottle大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不
 5. 对视频格式默认打开方式的修改，图库允许上传格式的修改，增加了flac后缀的图标和播放功能；
 6. 对mp4格式播放的字幕支持；
 7. 对m2ts和ts格式的自动转换（实验性）；
-8. 对pdf格式在线预览的支持；
-9. 对flv格式在线播放的修复。
+8. 对pdf格式在线预览的支持（精简了[pdf.js](https://github.com/xqymain/pdfjs-oidist)）；
+9. 对flv格式在线播放的修复（与xgplayer对CORS的兼容度有关，具体不详）。
 
 > Bottle:
 > 1. 密码md5密文保存  
@@ -130,4 +130,5 @@ RewriteRule ^(.*) index.php?/$1 [L]
 4. 西瓜播放器相关问题：
      无法播放mkv（mkv能容纳的编码太广，市面上没有项目能有效解码。推荐自行封装mp4+外挂字幕）
 
-     外挂字幕：在视频同路径创建与视频同名的webvtt格式字幕（例：foo.mp4字幕为foo.vtt）
+     外挂字幕：在视频同路径创建与视频同名的webvtt格式字幕（例：foo.mp4，其字幕文件保存为foo.vtt）
+     * DEMO：https://p.srv.pub/longVideoDS/American.Factory/
