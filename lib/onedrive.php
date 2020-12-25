@@ -314,7 +314,9 @@ class onedrive
                 $paths[] = rawurlencode($v);
             }
         }
-        return @join('/', $paths);
+        if (empty($paths))
+            return $paths;
+        return join('/', $paths);
     }
 
     static function _filesize($path)
