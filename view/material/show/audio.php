@@ -1,7 +1,7 @@
 <?php view::layout('layout')?>
 
 <?php view::begin('content');?>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<link rel="stylesheet" href="https://lib.baomitu.com/aplayer/1.10.1/APlayer.min.css">
 <div class="mdui-container-fluid">
 	<br>
 	<center>
@@ -20,7 +20,7 @@
 	</div>
 </div>
 <a href="<?php e($url);?>" class="mdui-fab mdui-fab-fixed mdui-ripple mdui-color-theme-accent"><i class="mdui-icon material-icons">file_download</i></a>
-<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="https://lib.baomitu.com/aplayer/1.10.1/APlayer.min.js"></script>
 <script>
 const ap = new APlayer({
     container: document.getElementById('aplayer'),

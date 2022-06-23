@@ -10,9 +10,9 @@ $mpd =  str_replace("thumbnail","videomanifest",$item['thumb'])."&part=index&for
 ?>
 
 <?php view::begin('content');?>
-<link class="dplayer-css" rel="stylesheet" href="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.css">
-<script src="https://cdn.jsdelivr.net/npm/dashjs/dist/dash.all.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/dplayer/dist/DPlayer.min.js"></script>
+<link class="dplayer-css" rel="stylesheet" href="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.css">
+<script src="https://lib.baomitu.com/dashjs/4.4.0/dash.all.min.js"></script>
+<script src="https://lib.baomitu.com/dplayer/1.25.0/DPlayer.min.js"></script>
 <div class="mdui-container-fluid">
 	<div class="nexmoe-item">
 	<div class="mdui-center" id="dplayer"></div>

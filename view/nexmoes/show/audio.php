@@ -9,8 +9,8 @@
 <div class="mdui-container-fluid">
     <div class="nexmoe-item">
 	<div id="mse"></div>
-    <script src="https://cdn.jsdelivr.net/npm/xgplayer@2.13.0/browser/index.js" charset="utf-8"></script>
-    <script src="https://cdn.jsdelivr.net/npm/xgplayer-music@2.2.0/browser/index.js" charset="utf-8"></script>
+    <script src="https://unpkg.byted-static.com/xgplayer/2.31.0/browser/index.js" charset="utf-8"></script>
+    <script src="https://unpkg.byted-static.com/xgplayer-music/2.2.0/browser/index.js" charset="utf-8"></script>
     <script type="text/javascript">
       let player = new window.Music({
           id: 'mse',
