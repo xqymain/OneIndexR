@@ -25,7 +25,6 @@
 
 > ## 停止更新
 ## 仅维护
-DEMO: <https://p.srv.pub/>（应网安要求更换域名）
 
 Bottle大佬的新项目在[这里](https://github.com/SomeBottle/OdIndex)，不想换可以使用本项目的后续版本。
 
@@ -111,7 +110,7 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 
-RewriteRule ^(.*) index.php?/$1 [L]
+RewriteRule ^(.*) index.php?/$1 "[L,QSA,B= ?,BNP]"
 ```
 
 ## Q&A
